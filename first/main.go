@@ -2,10 +2,17 @@ package main
 
 import "fmt"
 
-var y = 42
+var y = "help Bros"
 
 func main() {
-	n := fmt.Sprintf("%T\t%v\n", y, y)
-	fmt.Printf("%T\t%v\n", n, n)
+	fmt.Println(y)
+	bs := []byte(y)
+	fmt.Println(bs)
+	rs := []rune(y)
+	fmt.Println(rs)
+	fmt.Printf("%T\t%#U\n", bs, bs)
+	fmt.Printf("%T\t%#U\n", rs, rs)
+	y = []byte(y)
+	fmt.Println(y)
 
 }
