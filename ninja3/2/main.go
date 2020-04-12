@@ -1,8 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	var x = int64(23)
-	fmt.Printf("%T\n", x)
+	for i := 65; i <= 90; i++ {
+		fmt.Println(i)
+		for j := 0; j < 3; j++ {
+			fmt.Printf("\t%#U\n", i)
+		}
+	}
 }

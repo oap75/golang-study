@@ -3,5 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("ali")
+	for i := 1; i <= 10000; i++ {
+		fmt.Println(i)
+	}
 }
